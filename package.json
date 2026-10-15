@@ -1,0 +1,10 @@
+{
+  "name": "circleftp-nuvio-stremio-addon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Circle FTP-only Stremio/Nuvio addon scaffold",
+  "type": "module",
+  "scripts": {"check:api": "node api-check.mjs", "start": "node index.mjs"},
+  "engines": {"node": ">=20"},
+  "dependencies": {"stremio-addon-sdk": "^1.6.10"}
+}
