@@ -1,0 +1,350 @@
+{
+  "id": "community.circleftp.only",
+  "version": "0.1.0",
+  "name": "Circle FTP",
+  "description": "Community catalog addon for discovering Circle FTP entries. Availability and playable links depend on the hosted addon service.",
+  "resources": [
+    "catalog",
+    "meta",
+    "stream"
+  ],
+  "types": [
+    "movie",
+    "series"
+  ],
+  "idPrefixes": [
+    "circleftp:"
+  ],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "circleftp_80",
+      "name": "Circle FTP • Featured",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_80",
+      "name": "Circle FTP • Featured",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_6",
+      "name": "Circle FTP • English Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_6",
+      "name": "Circle FTP • English Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_9",
+      "name": "Circle FTP • English & Foreign TV Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_9",
+      "name": "Circle FTP • English & Foreign TV Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_22",
+      "name": "Circle FTP • Dubbed TV Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_22",
+      "name": "Circle FTP • Dubbed TV Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_2",
+      "name": "Circle FTP • Hindi Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_2",
+      "name": "Circle FTP • Hindi Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_5",
+      "name": "Circle FTP • Hindi TV Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_5",
+      "name": "Circle FTP • Hindi TV Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_238",
+      "name": "Circle FTP • Indian TV Show",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_238",
+      "name": "Circle FTP • Indian TV Show",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_7",
+      "name": "Circle FTP • Hindi Dubbed Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_7",
+      "name": "Circle FTP • Hindi Dubbed Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_8",
+      "name": "Circle FTP • Foreign Language Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_8",
+      "name": "Circle FTP • Foreign Language Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_3",
+      "name": "Circle FTP • South Indian Dubbed Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_3",
+      "name": "Circle FTP • South Indian Dubbed Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_4",
+      "name": "Circle FTP • South Indian Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_4",
+      "name": "Circle FTP • South Indian Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_1",
+      "name": "Circle FTP • Animation Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_1",
+      "name": "Circle FTP • Animation Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_21",
+      "name": "Circle FTP • Anime Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_21",
+      "name": "Circle FTP • Anime Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_85",
+      "name": "Circle FTP • Documentary",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_85",
+      "name": "Circle FTP • Documentary",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "circleftp_15",
+      "name": "Circle FTP • WWE",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "circleftp_15",
+      "name": "Circle FTP • WWE",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
