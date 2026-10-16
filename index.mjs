@@ -123,9 +123,21 @@ builder.defineCatalogHandler(async ({ type, id, extra = {} }) => {
 
     const posts = Array.isArray(data?.posts) ? data.posts : [];
     const metas = posts.map(toPreview).filter(Boolean).filter(meta => meta.type === type);
+
+    // Diagnostic logging: counts and type names only; do not log media URLs.
+    console.log('catalog diagnostic:', JSON.stringify({
+      catalogId: id,
+      requestedType: type,
+      responseKeys: data && typeof data === 'object' ? Object.keys(data) : [],
+      postsIsArray: Array.isArray(data?.posts),
+      postCount: posts.length,
+      sourceTypes: [...new Set(posts.map(post => String(post?.type ?? 'missing')))],
+      returnedCount: metas.length
+    }));
+
     return { metas };
   } catch (error) {
-    console.error('catalog:', error.message);
+    console.error('catalog error:', error.message);
     return { metas: [] };
   }
 });
