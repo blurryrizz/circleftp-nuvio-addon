@@ -137,7 +137,7 @@ builder.defineCatalogHandler(async ({ type, id, extra = {} }) => {
 
     return { metas };
   } catch (error) {
-    console.error('catalog error:', error.message);
+    console.error('catalog error:', JSON.stringify({ name: error?.name, message: error?.message, code: error?.code, causeCode: error?.cause?.code, causeMessage: error?.cause?.message }));
     return { metas: [] };
   }
 });
