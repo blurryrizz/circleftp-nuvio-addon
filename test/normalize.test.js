@@ -51,3 +51,4 @@ test("title and year helpers fall back safely", () => {
   assert.equal(isNumericPostId("42"), true);
   assert.equal(isNumericPostId("abc"), false);
 });
+
