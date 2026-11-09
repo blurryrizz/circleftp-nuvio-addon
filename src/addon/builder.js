@@ -3,7 +3,7 @@ const { addonBuilder } = sdk;
 import { createManifest } from "./manifest.js";
 import { extractPosts, getMediaKind, getPostDescription, getPostId, getPostTitle, getPostYear } from "../circleftp/normalize.js";
 
-function makeCircleFtpUrl(raw, apiBase) {
+export function makeCircleFtpUrl(raw, apiBase) {
   if (typeof raw !== "string" || !raw.trim()) return null;
   try {
     const url = new URL(raw, apiBase);
@@ -121,7 +121,7 @@ export function createAddon({ config, client, logger = console }) {
       const post = await client.getPost(postId);
       if (getMediaKind(post) !== "movie") return { streams: [] };
       const url = makeCircleFtpUrl(post.content, config.apiBase);
-      return { streams: url ? [{ name: "CircleFTP", title: post.title || "Play", url, behaviorHints: { notWebReady: true } }] : [] };
+      return { streams: url ? [{ name: "CircleFTP", title: getPostTitle(post) || "Play", url, behaviorHints: { notWebReady: true } }] : [] };
     } catch (error) {
       logger.error("CircleFTP stream request failed:", error.message);
       return { streams: [] };
