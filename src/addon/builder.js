@@ -1,7 +1,7 @@
 import sdk from "stremio-addon-sdk";
 const { addonBuilder } = sdk;
 import { createManifest } from "./manifest.js";
-import { extractPosts, getMediaKind, getPostId, getPostTitle } from "../circleftp/normalize.js";
+import { extractPosts, getMediaKind, getPostDescription, getPostId, getPostTitle, getPostYear } from "../circleftp/normalize.js";
 
 function makeCircleFtpUrl(raw, apiBase) {
   if (typeof raw !== "string" || !raw.trim()) return null;
@@ -85,8 +85,8 @@ export function createAddon({ config, client, logger = console }) {
         id: `circleftp:${postId}`,
         type,
         name: getPostTitle(post) || "Untitled",
-        description: typeof post.metaData === "string" ? post.metaData : undefined,
-        releaseInfo: post.year ? String(post.year).match(/\d{4}/)?.[0] : undefined
+         description: getPostDescription(post),
+        releaseInfo: getPostYear(post)
       };
 
       const posterName = post.imageSm || post.image;
