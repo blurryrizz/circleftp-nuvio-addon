@@ -22,5 +22,5 @@ test("getPost rejects non-numeric IDs before making a request", async () => {
     baseUrl: "http://new.circleftp.net:5000",
     fetchImpl: async () => { throw new Error("should not be called"); }
   });
-  await assert.rejects(() => client.getPost("abc"), /numeric/);
+  assert.throws(() => client.getPost("abc"), /numeric/);
 });
