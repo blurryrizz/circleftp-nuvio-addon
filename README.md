@@ -53,10 +53,11 @@ The actual IP depends on your network. Allow the port through Windows Firewall o
 
 - GitHub stores the source code; it does not run the addon.
 - A cloud host outside the BDIX network may be unable to reach CircleFTP. Test API access from the actual host before choosing a deployment provider.
+- The verified movie detail response uses a direct `content` URL hosted at `index.circleftp.net` (for example, an `.mkv` file). The addon returns this URL directly as a stream.
 - CircleFTP may return plain HTTP media URLs. Some clients or players may restrict HTTP playback; test on the target Nuvio device.
 - The addon only returns provider URLs. It does not download, proxy, or host video files.
 - Only supported video and series entries should be exposed. Non-video downloads such as APKs and archives must not be treated as playable media.
 
 ## Status
 
-This is an early implementation. Validate the live CircleFTP API response shape and stream URLs on the user's BDIX connection before treating it as production-ready.
+The search response and one movie detail response have been inspected on a BDIX connection. Movie entries use `type: singleVideo`; the detail response's `content` field contains the direct media URL. Series response structure and real playback in Nuvio still need testing.
