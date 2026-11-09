@@ -1,4 +1,5 @@
-import { addonBuilder } from "stremio-addon-sdk";
+import sdk from "stremio-addon-sdk";
+const { addonBuilder } = sdk;
 import { createManifest } from "./manifest.js";
 import { extractPosts, getMediaKind, getPostId, getPostTitle } from "../circleftp/normalize.js";
 
