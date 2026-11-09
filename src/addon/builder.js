@@ -85,7 +85,7 @@ export function createAddon({ config, client, logger = console }) {
         id: `circleftp:${postId}`,
         type,
         name: getPostTitle(post) || "Untitled",
-         description: getPostDescription(post),
+        description: getPostDescription(post),
         releaseInfo: getPostYear(post)
       };
 
